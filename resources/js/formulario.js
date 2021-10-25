@@ -204,6 +204,96 @@ function dataPorcentaje() {
             </li>
             `;
             $("#dP2").html(htmlP2);
+
+            // * pregunta 3
+            tmp3 = Math.round(
+                (r.resMP3a * 100) /
+                    (r.resMP3a + r.resMP3b + r.resMP3c + r.resMP3d)
+            );
+            tfp3 = r.resFP3a + r.resFP3b + r.resFP3c + r.resFP3d;
+            htmlP2 = `
+            <li>
+                <div class="row-fluid">
+                <div class="span6">
+                    <span>M ${Math.round(
+                        (r.resMP2a * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%, T ${r.resMP2a}</span>
+                    <div class="progress progress-striped ">
+                    <div style="width: ${Math.round(
+                        (r.resMP2a * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%;" class="bar"></div>
+                    </div>
+                    <span>M ${Math.round(
+                        (r.resMP2b * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%, T ${r.resMP2b}</span>
+                    <div class="progress progress-striped ">
+                    <div style="width: ${Math.round(
+                        (r.resMP2b * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%;" class="bar"></div>
+                    </div>
+                    <span>M ${Math.round(
+                        (r.resMP2c * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%, T ${r.resMP2c}</span>
+                    <div class="progress progress-striped ">
+                    <div style="width: ${Math.round(
+                        (r.resMP2c * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%;" class="bar"></div>
+                    </div>
+                    <span>M ${Math.round(
+                        (r.resMP2d * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%, T ${r.resMP2d}</span>
+                    <div class="progress progress-striped ">
+                    <div style="width: ${Math.round(
+                        (r.resMP2d * 100) /
+                            (r.resMP2a + r.resMP2b + r.resMP2c + r.resMP2d)
+                    )}%;" class="bar"></div>
+                    </div>
+                </div>
+                <div class="span6">
+                    <span>M ${Math.round((r.resFP2a * 100) / tfp2)}%, T ${
+                r.resFP2a
+            }</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width:${
+                        Math.round((r.resFP2a * 100) / tfp2)
+                    }%;" class="bar"></div>
+                    </div>
+                    <span>M ${Math.round((r.resFP2b * 100) / tfp2)}%, T ${
+                r.resFP2b
+            }</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width:${
+                        Math.round((r.resFP2b * 100) / tfp2)
+                    }%;" class="bar"></div>
+                    </div>
+                    <span>M ${Math.round((r.resFP2c * 100) / tfp2)}%, T ${
+                r.resFP2c
+            }</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width:${
+                        Math.round((r.resFP2c * 100) / tfp2)
+                    }%;" class="bar"></div>
+                    </div>
+                    <span>M ${Math.round((r.resFP2d * 100) / tfp2)}%, T ${
+                r.resFP2d
+            }</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width:${
+                        Math.round((r.resFP2d * 100) / tfp2)
+                    }%;" class="bar"></div>
+                    </div>
+                </div>
+                </div>
+            </li>
+            `;
+            $("#dP3").html(htmlP3);
         },
     });
 

@@ -231,18 +231,18 @@
           <div class="span2">
             <div class="widget-box">
               <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P2</h5>
+                <h5>P1</h5>
               </div>
               <div class="widget-content">
                 <ul class="unstyled" id="ssss">
                 </ul>
               </div>
             </div>
-          </div>
+          </div>  
           <div class="span2">
             <div class="widget-box">
               <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P3</h5>
+                <h5>P2</h5>
               </div>
               <div class="widget-content">
                 <ul class="unstyled" id="dP2">
@@ -256,7 +256,7 @@
                 <h5>P3</h5>
               </div>
               <div class="widget-content">
-                <ul class="unstyled" id="ssssww">
+                <ul class="unstyled" id="dP3">
                 </ul>
               </div>
             </div>
@@ -264,10 +264,10 @@
           <div class="span2">
             <div class="widget-box">
               <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P3</h5>
+                <h5>P4</h5>
               </div>
               <div class="widget-content">
-                <ul class="unstyled" id="ssssww">
+                <ul class="unstyled" id="dP4">
                 </ul>
               </div>
             </div>
@@ -275,26 +275,65 @@
           <div class="span2">
             <div class="widget-box">
               <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P3</h5>
+                <h5>P5</h5>
               </div>
               <div class="widget-content">
-                <ul class="unstyled" id="ssssww">
-                  <li>
-                    <div class="row-fluid">
-                      <div class="span6">
-                        <span>Masculino</span>
-                        <div class="progress progress-striped ">
-                          <div style="width: 90%;" class="bar">M P=5</div>
-                        </div>
-                      </div>
-                      <div class="span6">
-                        <span>Femenino</span>
-                        <div class="progress progress-danger progress-striped ">
-                          <div style="width: 90%;" class="bar">M P=5</div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+                <ul class="unstyled" id="dP5">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P6</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="dP6">
+                </ul>
+              </div>
+            </div>
+          </div>  
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P7</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="dP7">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P8</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="dP8">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P9</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="dP9">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P10</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="dP10">
                 </ul>
               </div>
             </div>
@@ -307,36 +346,6 @@
                 </div>
                 <div class="widget-content nopadding">
                   <table class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>M</th>
-                        <th></th>
-                        <th>Pre - 2</th>
-                        <th>Pre - 3</th>
-                        <th>Pre - 4</th>
-                        <th>Pre - 5</th>
-                        <th>Pre - 6</th>
-                        <th>Pre - 7</th>
-                        <th>Pre - 8</th>
-                        <th>Pre - 9</th>
-                        <th>Pre - 10</th>
-                      </tr>
-                    </thead>
-                    <thead>
-                      <tr>
-                        <th>F</th>
-                        <th>Pre - 1</th>
-                        <th>Pre - 2</th>
-                        <th>Pre - 3</th>
-                        <th>Pre - 4</th>
-                        <th>Pre - 5</th>
-                        <th>Pre - 6</th>
-                        <th>Pre - 7</th>
-                        <th>Pre - 8</th>
-                        <th>Pre - 9</th>
-                        <th>Pre - 10</th>
-                      </tr>
-                    </thead>
                     <thead>
                       <tr>
                         <th>#</th>
