@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>Matrix Admin</title>
@@ -34,7 +34,7 @@
           <li><a href="#"><i class="icon-key"></i> Salir</a></li>
         </ul>
       </li>
-     
+
       <li class=""><a title="" href="#"><i class="icon icon-share-alt"></i> <span class="text">Salir</span></a></li>
     </ul>
   </div>
@@ -64,49 +64,52 @@
 
     <div class="container-fluid">
       <hr>
+      <button type="button" class="btn btn-block" onclick="actualizarData()">actualizar</button>
+      <button type="button" class="btn btn-block" onclick="dataPorcentaje()">porcentaje</button>
+      <button type="button" class="btn btn-block" onclick="listData()">Listar</button>
       <div class="row-fluid">
-        <div class="span6">
 
-          <div class="widget-box">
-            <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-              <h5>Encuesta</h5>
-            </div>
-            <div class="widget-content nopadding">
-              <form id="for1" class="form-horizontal">
-            
+        <form id="for1" class="form-horizontal">
+          <div class="span6">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>Encuesta</h5>
+              </div>
+              <div class="widget-content nopadding">
+
                 <div class="control-group">
-                  <label class="control-label">1.	Identifique su sexo para intervenir en el estudio</label>
+                  <label class="control-label">1. Identifique su sexo para intervenir en el estudio</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="1" value="1a" checked/>
+                      <input type="radio" name="1" value="1a" checked />
                       Masculino</label>
                     <label>
-                      <input type="radio" name="1" value="1b"/>
+                      <input type="radio" name="1" value="1b" />
                       Femenino</label>
                   </div>
                 </div>
                 <div class="control-group">
-                  <label class="control-label">2.	Su edad esta comprendido entre</label>
+                  <label class="control-label">2. Su edad esta comprendido entre</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="2"  value="2a" checked/>
-                      40-50 años            </label>
+                      <input type="radio" name="2" value="2a" checked />
+                      40-50 años </label>
                     <label>
-                      <input type="radio" name="2"  value="2b"/>
+                      <input type="radio" name="2" value="2b" />
                       51 - 60 años</label>
                     <label>
-                      <input type="radio" name="2"  value="2c"/>
+                      <input type="radio" name="2" value="2c" />
                       Mayor de 60 años</label>
                     <label>
-                      <input type="radio" name="2"  value="2d"/>
+                      <input type="radio" name="2" value="2d" />
                       No corresponde</label>
                   </div>
                 </div>
                 <div class="control-group">
-                  <label class="control-label">3. Índice  de Masa corporal</label>
+                  <label class="control-label">3. Índice de Masa corporal</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="3" value="3a"checked />
+                      <input type="radio" name="3" value="3a" checked />
                       Menor a 30 </label>
                     <label>
                       <input type="radio" name="3" value="3b" />
@@ -123,30 +126,39 @@
                   <label class="control-label">4. Presencia de cefalea o dolor de cabeza</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="4" value="4a"checked />
+                      <input type="radio" name="4" value="4a" checked />
                       Si</label>
                     <label>
                       <input type="radio" name="4" value="4b" />
                       No</label>
-                      Third One</label>
+                    Third One</label>
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label">5. Presencia de parestesia (adormecimientos)</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="5" value="5a"checked />
+                      <input type="radio" name="5" value="5a" checked />
                       Si</label>
                     <label>
                       <input type="radio" name="5" value="5b" />
                       No</label>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="span6">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>Encuesta</h5>
+              </div>
+              <div class="widget-content nopadding">
                 <div class="control-group">
                   <label class="control-label">6. Presencia de tinitus (ruidos en el obrero)</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="6" value="6a"checked />
+                      <input type="radio" name="6" value="6a" checked />
                       Si</label>
                     <label>
                       <input type="radio" name="6" value="6b" />
@@ -157,7 +169,7 @@
                   <label class="control-label">7. Presencia de dificultad respiratoria</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="7" value="7a"checked />
+                      <input type="radio" name="7" value="7a" checked />
                       Leve</label>
                     <label>
                       <input type="radio" name="7" value="7b" />
@@ -171,7 +183,7 @@
                   <label class="control-label">8. presencia de coloración azulada (cianosis) en los dedos</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="8" value="8a"checked />
+                      <input type="radio" name="8" value="8a" checked />
                       Leve</label>
                     <label>
                       <input type="radio" name="8" value="8b" />
@@ -185,7 +197,7 @@
                   <label class="control-label">9. Diagnóstico previo de hipertensión arterial </label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="9" value="9a"checked />
+                      <input type="radio" name="9" value="9a" checked />
                       Si</label>
                     <label>
                       <input type="radio" name="9" value="9b" />
@@ -196,7 +208,7 @@
                   <label class="control-label">10. Frecuencia de visitas a control médico</label>
                   <div class="controls">
                     <label>
-                      <input type="radio" name="10" value="10a" checked/>
+                      <input type="radio" name="10" value="10a" checked />
                       1 vez al año</label>
                     <label>
                       <input type="radio" name="10" value="10b" />
@@ -206,43 +218,159 @@
                       No Asiste</label>
                   </div>
                 </div>
-
                 <div class="form-actions">
                   <button type="submit" class="btn btn-success">Registrar</button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-
-        </div>
-        <div class="span6">
-          <div class="widget-box">
-            <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-              <h5>Progress Box</h5>
+        </form>
+        <div class="container-fluid">
+          <hr>
+          
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P2</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="ssss">
+                </ul>
+              </div>
             </div>
-            <div class="widget-content">
-              <ul class="unstyled">
-                <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 81% Clicks <span class="pull-right strong">567</span>
-                  <div class="progress progress-striped ">
-                    <div style="width: 81%;" class="bar"></div>
-                  </div>
-                </li>
-                <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 72% Uniquie Clicks <span class="pull-right strong">507</span>
-                  <div class="progress progress-success progress-striped ">
-                    <div style="width: 72%;" class="bar"></div>
-                  </div>
-                </li>
-                <li> <span class="icon24 icomoon-icon-arrow-down-2 red"></span> 53% Impressions <span class="pull-right strong">457</span>
-                  <div class="progress progress-warning progress-striped ">
-                    <div style="width: 53%;" class="bar"></div>
-                  </div>
-                </li>
-                <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 3% Online Users <span class="pull-right strong">8</span>
-                  <div class="progress progress-danger progress-striped ">
-                    <div style="width: 3%;" class="bar"></div>
-                  </div>
-                </li>
-              </ul>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P3</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="dP2">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P3</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="ssssww">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P3</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="ssssww">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="span2">
+            <div class="widget-box">
+              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                <h5>P3</h5>
+              </div>
+              <div class="widget-content">
+                <ul class="unstyled" id="ssssww">
+                  <li>
+                    <div class="row-fluid">
+                      <div class="span6">
+                        <span>Masculino</span>
+                        <div class="progress progress-striped ">
+                          <div style="width: 90%;" class="bar">M P=5</div>
+                        </div>
+                      </div>
+                      <div class="span6">
+                        <span>Femenino</span>
+                        <div class="progress progress-danger progress-striped ">
+                          <div style="width: 90%;" class="bar">M P=5</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+                  <h5>Relevacion de datos</h5>
+                </div>
+                <div class="widget-content nopadding">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>M</th>
+                        <th></th>
+                        <th>Pre - 2</th>
+                        <th>Pre - 3</th>
+                        <th>Pre - 4</th>
+                        <th>Pre - 5</th>
+                        <th>Pre - 6</th>
+                        <th>Pre - 7</th>
+                        <th>Pre - 8</th>
+                        <th>Pre - 9</th>
+                        <th>Pre - 10</th>
+                      </tr>
+                    </thead>
+                    <thead>
+                      <tr>
+                        <th>F</th>
+                        <th>Pre - 1</th>
+                        <th>Pre - 2</th>
+                        <th>Pre - 3</th>
+                        <th>Pre - 4</th>
+                        <th>Pre - 5</th>
+                        <th>Pre - 6</th>
+                        <th>Pre - 7</th>
+                        <th>Pre - 8</th>
+                        <th>Pre - 9</th>
+                        <th>Pre - 10</th>
+                      </tr>
+                    </thead>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Pre - 1</th>
+                        <th>Pre - 2</th>
+                        <th>Pre - 3</th>
+                        <th>Pre - 4</th>
+                        <th>Pre - 5</th>
+                        <th>Pre - 6</th>
+                        <th>Pre - 7</th>
+                        <th>Pre - 8</th>
+                        <th>Pre - 9</th>
+                        <th>Pre - 10</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tablaLista">
+                      <tr class="odd gradeX">
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -250,6 +378,7 @@
     </div>
   </div>
   </div>
+
 
   <!--end-main-container-part-->
 
@@ -286,6 +415,31 @@
 
   <script src="{{ asset('resources/js/formulario.js')}}  "></script>
 
+  <script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = ["red", "green", "blue", "orange", "brown"];
+
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          text: "World Wine Production 2018"
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(function() {
@@ -356,6 +510,8 @@
       update();
     });
   </script>
+
+
 </body>
 
 </html>

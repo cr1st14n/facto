@@ -20,3 +20,6 @@ Route::get('/', function () {
     return view('home');
 });
 Route::get('create',[FomularioController::class,'create']);
+Route::get('actData',[FomularioController::class,'store']);
+Route::get('listData',[FomularioController::class,'listData']);
+Route::get('dataEst',[FomularioController::class,'dataEst']);
