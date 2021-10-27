@@ -22,6 +22,7 @@ $("#for1").submit(function (e) {
 
                 // *funcion de listar
                 listData();
+                dataPorcentaje();
             } else {
                 $.gritter.add({
                     title: "ERROR !!",
@@ -101,7 +102,7 @@ function dataPorcentaje() {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((r.F * 100) / (r.M + r.F))}%, T ${
+                    <span>F ${Math.round((r.F * 100) / (r.M + r.F))}%, T ${
                 r.F
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -167,7 +168,7 @@ function dataPorcentaje() {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((r.resFP2a * 100) / tfp2)}%, T ${
+                    <span>F ${Math.round((r.resFP2a * 100) / tfp2)}%, T ${
                 r.resFP2a
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -175,7 +176,7 @@ function dataPorcentaje() {
                         (r.resFP2a * 100) / tfp2
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((r.resFP2b * 100) / tfp2)}%, T ${
+                    <span>F ${Math.round((r.resFP2b * 100) / tfp2)}%, T ${
                 r.resFP2b
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -183,7 +184,7 @@ function dataPorcentaje() {
                         (r.resFP2b * 100) / tfp2
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((r.resFP2c * 100) / tfp2)}%, T ${
+                    <span>F ${Math.round((r.resFP2c * 100) / tfp2)}%, T ${
                 r.resFP2c
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -191,7 +192,7 @@ function dataPorcentaje() {
                         (r.resFP2c * 100) / tfp2
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((r.resFP2d * 100) / tfp2)}%, T ${
+                    <span>F ${Math.round((r.resFP2d * 100) / tfp2)}%, T ${
                 r.resFP2d
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -257,7 +258,7 @@ function dataPorcentaje() {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((r.resFP3a * 100) / tfp3)}%, T ${
+                    <span>F ${Math.round((r.resFP3a * 100) / tfp3)}%, T ${
                 r.resFP3a
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -265,7 +266,7 @@ function dataPorcentaje() {
                         (r.resFP3a * 100) / tfp3
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((r.resFP3b * 100) / tfp3)}%, T ${
+                    <span>F ${Math.round((r.resFP3b * 100) / tfp3)}%, T ${
                 r.resFP3b
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -273,7 +274,7 @@ function dataPorcentaje() {
                         (r.resFP3b * 100) / tfp3
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((r.resFP3c * 100) / tfp3)}%, T ${
+                    <span>F ${Math.round((r.resFP3c * 100) / tfp3)}%, T ${
                 r.resFP3c
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -281,7 +282,7 @@ function dataPorcentaje() {
                         (r.resFP3c * 100) / tfp3
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((r.resFP3d * 100) / tfp3)}%, T ${
+                    <span>F ${Math.round((r.resFP3d * 100) / tfp3)}%, T ${
                 r.resFP3d
             }</span>
                     <div class="progress progress-danger progress-striped ">
@@ -297,32 +298,12 @@ function dataPorcentaje() {
             $("#dP4").html(funcRhtml(r, 4));
             $("#dP5").html(funcRhtml(r, 5));
             $("#dP6").html(funcRhtml(r, 6));
+            $("#dP7").html(funcRhtml(r, 7));
+            $("#dP8").html(funcRhtml(r, 8));
             $("#dP9").html(funcRhtml(r, 9));
+            $("#dP10").html(funcRhtml(r, 10));
         },
     });
-
-    html = `<li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 60% Clicks <span class="pull-right strong">567</span>
-            <div class="progress progress-striped ">
-            <div style="width: 60%;" class="bar"></div>
-            <div style="width: 30%;" class="bar" style="color:red"></div>
-            </div>
-        </li>
-        <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 72% Uniquie Clicks <span class="pull-right strong">507</span>
-            <div class="progress progress-success progress-striped ">
-            <div style="width: 72%;" class="bar"></div>
-            </div>
-        </li>
-        <li> <span class="icon24 icomoon-icon-arrow-down-2 red"></span> 53% Impressions <span class="pull-right strong">457</span>
-            <div class="progress progress-warning progress-striped ">
-            <div style="width: 53%;" class="bar"></div>
-            </div>
-        </li>
-        <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 3% Online Users <span class="pull-right strong">8</span>
-            <div class="progress progress-danger progress-striped ">
-            <div style="width: 3%;" class="bar"></div>
-            </div>
-        </li>`;
-    $("#ssssww").html(html);
 }
 function funcRhtml(r, param) {
     switch (param) {
@@ -358,13 +339,13 @@ function funcRhtml(r, param) {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                    <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (af * 100) / tf
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                    <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (bf * 100) / tf
@@ -374,7 +355,7 @@ function funcRhtml(r, param) {
                 </div>
             </li>
             `;
-            return htmlP4
+            return htmlP4;
             break;
         case 5:
             // * pregunta 4
@@ -408,13 +389,13 @@ function funcRhtml(r, param) {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                    <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (af * 100) / tf
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                    <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (bf * 100) / tf
@@ -424,7 +405,7 @@ function funcRhtml(r, param) {
                 </div>
             </li>
             `;
-            return htmlP5
+            return htmlP5;
             break;
         case 6:
             // * pregunta 4
@@ -458,13 +439,13 @@ function funcRhtml(r, param) {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                    <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (af * 100) / tf
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                    <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (bf * 100) / tf
@@ -474,9 +455,9 @@ function funcRhtml(r, param) {
                 </div>
             </li>
             `;
-            return htmlP6
+            return htmlP6;
             break;
-            case 9:
+        case 9:
             // * pregunta 4
 
             am = r.resMP9a;
@@ -508,13 +489,13 @@ function funcRhtml(r, param) {
                     </div>
                 </div>
                 <div class="span6">
-                    <span>M ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                    <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (af * 100) / tf
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                    <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
                     <div class="progress progress-danger progress-striped ">
                     <div style="width:${Math.round(
                         (bf * 100) / tf
@@ -524,79 +505,190 @@ function funcRhtml(r, param) {
                 </div>
             </li>
             `;
-            return htmlP9
+            return htmlP9;
             break;
-            case 7:
+        case 7:
             // * pregunta 4
 
             am = r.resMP7a;
             bm = r.resMP7b;
-            bm = r.resMP7b;
+            cm = r.resMP7c;
+
             af = r.resFP7a;
             bf = r.resFP7b;
-            bf = r.resFP7b;
+            cf = r.resFP7c;
             // tmp4 = Math.round((a * 100) / (a + b));
             tm = am + bm + cm;
             tf = af + bf + cf;
-            htmlP6 = `
+            htmlP7 = `
             <li>
                 <div class="row-fluid">
                 <div class="span6">
-                    <span>M ${Math.round(
-                        (am * 100) / (tm)
-                    )}%, T ${am}</span>
+                    <span>M ${Math.round((am * 100) / tm)}%, T ${am}</span>
                     <div class="progress progress-striped ">
                     <div style="width: ${Math.round(
-                        (am * 100) / (tm)
+                        (am * 100) / tm
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round(
-                        (bm * 100) / (tm)
-                    )}%, T ${bm}</span>
+                    <span>M ${Math.round((bm * 100) / tm)}%, T ${bm}</span>
                     <div class="progress progress-striped ">
                     <div style="width: ${Math.round(
-                        (bm * 100) / (tm)
+                        (bm * 100) / tm
                     )}%;" class="bar"></div>
                     </div>
-                    <span>M ${Math.round(
-                        (cm * 100) / (tm)
-                    )}%, T ${cm}</span>
+                    <span>M ${Math.round((cm * 100) / tm)}%, T ${cm}</span>
                     <div class="progress progress-striped ">
                     <div style="width: ${Math.round(
-                        (cm * 100) / (tm)
+                        (cm * 100) / tm
                     )}%;" class="bar"></div>
                     </div>
                 </div>
                 <div class="span6">
-                <span>M ${Math.round(
-                    (af * 100) / (tf)
-                )}%, T ${af}</span>
-                <div class="progress progress-striped ">
-                <div style="width: ${Math.round(
-                    (af * 100) / (tf)
-                )}%;" class="bar"></div>
-                </div>
-                <span>M ${Math.round(
-                    (bf * 100) / (tf)
-                )}%, T ${bf}</span>
-                <div class="progress progress-striped ">
-                <div style="width: ${Math.round(
-                    (bf * 100) / (tf)
-                )}%;" class="bar"></div>
-                </div>
-                <span>M ${Math.round(
-                    (cf * 100) / (tf)
-                )}%, T ${cf}</span>
-                <div class="progress progress-striped ">
-                <div style="width: ${Math.round(
-                    (cf * 100) / (tf)
-                )}%;" class="bar"></div>
-                </div>
-                </div>
+                    <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width: ${Math.round(
+                        (af * 100) / tf
+                    )}%;" class="bar"></div>
+                    </div>
+                    <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width: ${Math.round(
+                        (bf * 100) / tf
+                    )}%;" class="bar"></div>
+                    </div>
+                    <span>F ${Math.round((cf * 100) / tf)}%, T ${cf}</span>
+                    <div class="progress progress-danger progress-striped ">
+                    <div style="width: ${Math.round(
+                        (cf * 100) / tf
+                    )}%;" class="bar"></div>
+                    </div>
+                    </div>
                 </div>
             </li>
             `;
-            return htmlP6
+            return htmlP7;
+            break;
+        case 8:
+            // * pregunta 4
+
+            am = r.resMP8a;
+            bm = r.resMP8b;
+            cm = r.resMP8c;
+
+            af = r.resFP8a;
+            bf = r.resFP8b;
+            cf = r.resFP8c;
+            // tmp4 = Math.round((a * 100) / (a + b));
+            tm = am + bm + cm;
+            tf = af + bf + cf;
+            htmlP8 = `
+                <li>
+                    <div class="row-fluid">
+                    <div class="span6">
+                        <span>M ${Math.round((am * 100) / tm)}%, T ${am}</span>
+                        <div class="progress progress-striped ">
+                        <div style="width: ${Math.round(
+                            (am * 100) / tm
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>M ${Math.round((bm * 100) / tm)}%, T ${bm}</span>
+                        <div class="progress progress-striped ">
+                        <div style="width: ${Math.round(
+                            (bm * 100) / tm
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>M ${Math.round((cm * 100) / tm)}%, T ${cm}</span>
+                        <div class="progress progress-striped ">
+                        <div style="width: ${Math.round(
+                            (cm * 100) / tm
+                        )}%;" class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                        <div class="progress progress-danger progress-striped ">
+                        <div style="width: ${Math.round(
+                            (af * 100) / tf
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                        <div class="progress progress-danger progress-striped ">
+                        <div style="width: ${Math.round(
+                            (bf * 100) / tf
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>F ${Math.round((cf * 100) / tf)}%, T ${cf}</span>
+                        <div class="progress progress-danger progress-striped ">
+                        <div style="width: ${Math.round(
+                            (cf * 100) / tf
+                        )}%;" class="bar"></div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+                `;
+            return htmlP8;
+            break;
+        case 10:
+            // * pregunta 4
+
+            am = r.resMP10a;
+            bm = r.resMP10b;
+            cm = r.resMP10c;
+
+            af = r.resFP10a;
+            bf = r.resFP10b;
+            cf = r.resFP10c;
+            // tmp4 = Math.round((a * 100) / (a + b));
+            tm = am + bm + cm;
+            tf = af + bf + cf;
+            htmlP10 = `
+                <li>
+                    <div class="row-fluid">
+                    <div class="span6">
+                        <span>M ${Math.round((am * 100) / tm)}%, T ${am}</span>
+                        <div class="progress progress-striped ">
+                        <div style="width: ${Math.round(
+                            (am * 100) / tm
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>M ${Math.round((bm * 100) / tm)}%, T ${bm}</span>
+                        <div class="progress progress-striped ">
+                        <div style="width: ${Math.round(
+                            (bm * 100) / tm
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>M ${Math.round((cm * 100) / tm)}%, T ${cm}</span>
+                        <div class="progress progress-striped ">
+                        <div style="width: ${Math.round(
+                            (cm * 100) / tm
+                        )}%;" class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <span>F ${Math.round((af * 100) / tf)}%, T ${af}</span>
+                        <div class="progress progress-danger progress-striped ">
+                        <div style="width: ${Math.round(
+                            (af * 100) / tf
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>F ${Math.round((bf * 100) / tf)}%, T ${bf}</span>
+                        <div class="progress progress-danger progress-striped ">
+                        <div style="width: ${Math.round(
+                            (bf * 100) / tf
+                        )}%;" class="bar"></div>
+                        </div>
+                        <span>F ${Math.round((cf * 100) / tf)}%, T ${cf}</span>
+                        <div class="progress progress-danger progress-striped ">
+                        <div style="width: ${Math.round(
+                            (cf * 100) / tf
+                        )}%;" class="bar"></div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+                `;
+            return htmlP10;
             break;
 
         default:

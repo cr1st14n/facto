@@ -178,9 +178,9 @@ class FomularioController extends Controller
         $respFp9b=fomulario::where('f1','1b')->where('f9','9b')->count();
        
 
-        $respFp10a=fomulario::where('f1','ba')->where('f10','10a')->count();
-        $respFp10b=fomulario::where('f1','ba')->where('f10','10b')->count();
-        $respFp10c=fomulario::where('f1','ba')->where('f10','10c')->count();
+        $respFp10a=fomulario::where('f1','1b')->where('f10','10a')->count();
+        $respFp10b=fomulario::where('f1','1b')->where('f10','10b')->count();
+        $respFp10c=fomulario::where('f1','1b')->where('f10','10c')->count();
       
 
 

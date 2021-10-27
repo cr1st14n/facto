@@ -227,117 +227,122 @@
         </form>
         <div class="container-fluid">
           <hr>
-          
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P1</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="ssss">
-                </ul>
-              </div>
-            </div>
-          </div>  
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P2</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP2">
-                </ul>
+          <div class="row-fluid">
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P1</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="ssss">
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P3</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP3">
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P4</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP4">
-                </ul>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P2</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP2">
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P5</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP5">
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P6</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP6">
-                </ul>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P3</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP3">
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>  
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P7</h5>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P4</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP4">
+                  </ul>
+                </div>
               </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP7">
-                </ul>
+            </div>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P5</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP5">
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P8</h5>
+          <div class="row-fluid">
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P6</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP6">
+                  </ul>
+                </div>
               </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP8">
-                </ul>
+            </div>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P7</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP7">
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P8</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP8">
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P9</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP9">
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                  <h5>P10</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="unstyled" id="dP10">
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P9</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP9">
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="span2">
-            <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
-                <h5>P10</h5>
-              </div>
-              <div class="widget-content">
-                <ul class="unstyled" id="dP10">
-                </ul>
-              </div>
-            </div>
-          </div>
+
+
           <div class="row-fluid">
             <div class="span12">
               <div class="widget-box">
